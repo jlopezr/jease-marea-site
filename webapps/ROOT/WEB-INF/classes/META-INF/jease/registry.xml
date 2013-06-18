@@ -1,0 +1,14 @@
+<jease>
+  <component>
+    <domain>custom.Meeting</domain>
+    <editor>custom.MeetingEditor</editor>
+    <icon>~./jfix/img/appointment-new.png</icon>
+    <view>/custom/Meeting.jsp</view>
+  </component>
+   <component>
+    <domain>custom.MasterThesis</domain>
+    <editor>custom.MasterThesisEditor</editor>
+    <icon>~./jfix/img/appointment-new.png</icon>
+    <view>/custom/MasterThesis.jsp</view>
+  </component>
+</jease>

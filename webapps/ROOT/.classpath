@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="WEB-INF/src"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/bsh.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/ckez.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/codemirror.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-io.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/db4o.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/flyingsaucer.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/itext.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jease.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jfix.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jsoup.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/lucene.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mail.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/perst.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/recaptcha4j.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/tika.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/wikitext.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/xstream.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/zcommon.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/zcommons-el.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/zhtml.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/zk.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/zul.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/zweb.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>
