@@ -21,6 +21,9 @@
 # $Id: startup.sh 1202062 2011-11-15 06:50:02Z mturk $
 # -----------------------------------------------------------------------------
 
+# Remove DISPLAY
+unset DISPLAY
+
 # Better OS/400 detection: see Bugzilla 31132
 os400=false
 case "`uname`" in
