@@ -27,5 +27,6 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/zul.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/zweb.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/juan/Dropbox/Proyectos/jease/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>
