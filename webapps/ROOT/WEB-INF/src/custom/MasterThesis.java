@@ -1,5 +1,7 @@
 package custom;
 
+import jease.cmf.service.Nodes;
+import jease.cmf.domain.Node;
 import jease.cms.domain.Content;
 import jfix.db4o.Blob;
 
@@ -17,6 +19,24 @@ public class MasterThesis extends Content {
     private String url;  //URL
     private String downloadUrl; //URL
 
+    public static String getTitle(String path) {
+    	//Node n = Nodes.getByPath(path);
+    	
+    	Node n = Nodes.getByPath("JLR.jpg");
+    	
+    	
+    	/*
+    	if(n!=null && n instanceof Content) {
+    		Content c = (Content)n;   		
+    		return c.getTitle();
+    	}*/
+    	if(n==null && n instanceof Content) {
+    		return new String("N ES NULO o NO CONTENT ["+path+"]");
+    	} else {
+    		return ((Content)n).getTitle();
+    	}
+    }
+     
     public String getSmallPhoto() {
 		return smallPhoto;
 	}
