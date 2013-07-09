@@ -32,9 +32,9 @@
     <%=masterThesis.getDescription()%>
   </p>
   
-  <div>
-    <img align="middle" src="<%=masterThesis.getBigPhoto()%>" width="350">
-    <p align="center">Fig. 1 – Nice Picture :D</p>
+  <div align="middle">
+    <img src="<%=masterThesis.getBigPhoto()%>" width="350">
+    <p>Fig. 1 – Nice Picture :D</p>
   </div>
   
   <p style="text-align: justify;">
