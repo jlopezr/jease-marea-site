@@ -8,7 +8,7 @@
    <component>
     <domain>custom.MasterThesis</domain>
     <editor>custom.MasterThesisEditor</editor>
-    <icon>~./jfix/img/appointment-new.png</icon>
+    <icon>~./jease/cms/MasterThesis.png</icon>
     <view>/custom/MasterThesis.jsp</view>
   </component>
 </jease>
