@@ -34,7 +34,7 @@
   
   <div align="middle">
     <img src="<%=masterThesis.getBigPhoto()%>" width="350">
-    <p>Fig. 1 – <%=MasterThesis.getTitle(masterThesis.getBigPhoto())%></p>
+    <p>Fig. 1 – <%=MasterThesis.getTitleByPath(masterThesis.getBigPhoto())%></p>
   </div>
   
   <p style="text-align: justify;">

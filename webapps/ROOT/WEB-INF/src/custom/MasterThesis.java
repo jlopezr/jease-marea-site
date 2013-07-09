@@ -19,21 +19,17 @@ public class MasterThesis extends Content {
     private String url;  //URL
     private String downloadUrl; //URL
 
-    public static String getTitle(String path) {
-    	//Node n = Nodes.getByPath(path);
+    public static String getTitleByPath(String path) {
+    	if(path.startsWith("./~")) {
+    		path = path.substring(3);
+    	}
+    	Node n = Nodes.getByPath(path);
     	
-    	Node n = Nodes.getByPath("JLR.jpg");
-    	
-    	
-    	/*
-    	if(n!=null && n instanceof Content) {
-    		Content c = (Content)n;   		
-    		return c.getTitle();
-    	}*/
     	if(n==null && n instanceof Content) {
-    		return new String("N ES NULO o NO CONTENT ["+path+"]");
+    		return null;
     	} else {
-    		return ((Content)n).getTitle();
+    		String title = ((Content)n).getTitle();
+    		return title;
     	}
     }
      
