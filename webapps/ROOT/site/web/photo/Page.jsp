@@ -27,6 +27,17 @@
 <%@include file="/site/service/Rewrite.jsp"%>
 <%@include file="/site/service/Lightbox.jsp"%>
 <%@include file="/site/service/Prettify.jsp"%>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42678418-1', 'upc.es');
+  ga('send', 'pageview');
+</script>
+<!---------------------->
 <script type="text/javascript" src="<%=request.getContextPath() %>/site/web/photo/js/jquery.innerfade.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath() %>/site/web/photo/js/jquery.mediaqueries.js"></script>
 <script type="text/javascript">
