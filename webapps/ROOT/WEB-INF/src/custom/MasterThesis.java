@@ -20,7 +20,11 @@ public class MasterThesis extends Content {
     private String downloadUrl; //URL
 
     public static String getTitleByPath(String path) {
-    	if(path.startsWith("./~")) {
+    	// This allows to use getTitleByPath for showing descriptive "names" for external links also. i.e "More info at:" 
+	if(path.startsWith("http://")) {
+		return path;
+	}
+	if(path.startsWith("./~")) {
     		path = path.substring(3);
     	}
     	Node n = Nodes.getByPath(path);

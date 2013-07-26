@@ -58,11 +58,11 @@
     <% } %>
       
     <% if(!masterThesis.getUrl().equals("")) { %>  
-    <strong>Read more at:</strong> <a href="<%=masterThesis.getUrl()%>" title="project url"><strong><%=masterThesis.getUrl()%></strong></a><br>
+    <strong>Read more at:</strong> <a href="<%=masterThesis.getUrl()%>" title="<%=MasterThesis.getTitleByPath(masterThesis.getUrl())%>"><strong><%=MasterThesis.getTitleByPath(masterThesis.getUrl())%></strong></a><br>
     <% } %>
       
     <% if(!masterThesis.getDownloadUrl().equals("")) { %>
-    <strong>Download at:</strong> <a href="<%=masterThesis.getDownloadUrl()%>" title="download url"><strong> <%=masterThesis.getDownloadUrl()%> </strong></a>
+    <strong>Download at:</strong> <a href="<%=masterThesis.getDownloadUrl()%>" title="<%=MasterThesis.getTitleByPath(masterThesis.getDownloadUrl())%>"><strong> <%=MasterThesis.getTitleByPath(masterThesis.getDownloadUrl())%> </strong></a>
     <% } %>
     </div>
   </div>
