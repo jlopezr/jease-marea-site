@@ -13,23 +13,31 @@ public class MasterThesis extends Content {
     private String description;
     private String topic;
     private String smallPhoto; //CONTENT
-	private String bigPhoto;  //CONTENT
+    private String bigPhoto;  //CONTENT
     private String director;
     private int qualification;
     private String url;  //URL
     private String downloadUrl; //URL
 
+    public boolean isContainer() {
+	return true;
+    }
+
     public static String getTitleByPath(String path) {
+	if(path==null || path.equals("")) {
+		return null;   	
+	}
     	// This allows to use getTitleByPath for showing descriptive "names" for external links also. i.e "More info at:" 
-	if(path.startsWith("http://")) {
+	if(path.startsWith("http://") || path.startsWith("https://")) {
 		return path;
 	}
+	
 	if(path.startsWith("./~")) {
     		path = path.substring(3);
     	}
     	Node n = Nodes.getByPath(path);
     	
-    	if(n==null && n instanceof Content) {
+    	if(n==null || !(n instanceof Content)) {
     		return null;
     	} else {
     		String title = ((Content)n).getTitle();
@@ -139,6 +147,9 @@ public class MasterThesis extends Content {
     }
 
     public void replace(String target, String replacement) {
+       System.out.println("TARGET=<"+target+">");
+       System.out.println("REPLACEMENT=<"+replacement+">");
+
        super.replace(target, replacement);
        setTopic(getTopic().replace(target, replacement));
        setAuthor(getAuthor().replace(target, replacement));
@@ -146,7 +157,10 @@ public class MasterThesis extends Content {
        setDescription(getDescription().replace(target, replacement));
        setDirector(getDirector().replace(target, replacement));
        
-       //TODO Need to replace also in URL and Images?       
+       //TODO Need to replace also in URL and Images?
+       //     Seems that moving content is not called... when changing a Linkfield yes :?
+       //setSmallPhoto(getSmallPhoto().replace(target, replacement));     
+       //setBigPhoto(getBigPhoto().replace(target, replacement));     
     }
 
     public MasterThesis copy(boolean recursive) {

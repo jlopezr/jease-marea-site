@@ -32,8 +32,8 @@ public class MasterThesisEditor extends
  RichTextarea topic = new RichTextarea();
  Textfield director = new Textfield();
  Intfield qualification = new Intfield();
- Textfield url = new Textfield();
- Textfield downloadUrl = new Textfield();
+ Linkfield url = new Linkfield();
+ Linkfield downloadUrl = new Linkfield();
  
  public MasterThesisEditor() {
  }
@@ -64,8 +64,8 @@ public class MasterThesisEditor extends
 	 topic.setText(getNode().getTopic());
 	 director.setText(getNode().getDirector());
 	 qualification.setValue(getNode().getQualification());
-	 url.setText(getNode().getUrl());
-	 downloadUrl.setText(getNode().getDownloadUrl());
+	 url.setValue(getNode().getUrl());
+	 downloadUrl.setValue(getNode().getDownloadUrl());
   }
 
  public void validate() {
@@ -87,7 +87,7 @@ public class MasterThesisEditor extends
   getNode().setTopic(topic.getText());
   getNode().setDirector(director.getText());
   getNode().setQualification(qualification.getValue());
-  getNode().setUrl(url.getText());
-  getNode().setDownloadUrl(downloadUrl.getText());
+  getNode().setUrl(url.getValue());
+  getNode().setDownloadUrl(downloadUrl.getValue());
  }
 }
